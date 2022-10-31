@@ -1,5 +1,7 @@
+s
 <!DOCTYPE html>
 <html lang="en">
+
 <head>
     <meta charset="UTF-8">
     <meta http-equiv="X-UA-Compatible" content="IE=edge">
@@ -8,54 +10,66 @@
     <link href="https://fonts.googleapis.com/css?family=Lato:300,400,700" rel="stylesheet">
     <link rel="stylesheet" href="style.css" media="screen" charset="utf-8">
 </head>
+
 <body>
-    <main>
-        <div class="aaa">
+    <!-- header -->
+    <header class="header-content">
             <img src="./eisenhower-matrix.jpg" alt="" ">
-            <a class="more_inf" href="https://goal-life.com/page/method/matrix-eisenhower">Want more details?</a>
-        </div>
-        <div class="centered-main-page-element">
-            <p id="topSectionForAddingElementToList">
-                <label for="new-task">add item</label>
-                <div class="task-row-wrapper"><input id='new-task' class="task">
-                    <button>Add</button>
+            <a class=" header-link" href="https://goal-life.com/page/method/matrix-eisenhower">Want more details?</a>
+    </header>
+    <!-- main -->
+    <main>
+        <div class="main-content">
+            <div id="add-task">
+                <label for="new-task"> Add Item </label>
+                <div class="task-row-wrapper">
+                    <input id="new-task" class="task">
+                    <button> Add </button>
                 </div>
-                
-            </p>
-        <h3>todo</h3>
-        <ul id="incompleteTasks">
-            <li>
-                <input type="checkbox">
-                <label class="task">Pay Bills</label>
-                <input type="text" class="task">
-                <button class="edit">Edit</button>
-                <button class="delete">
-                    <img src="./remove.svg" alt="remove-icon"></button>
+            </div>
+            <h3> Todo </h3>
+            <ul id="todo-tasks">
+                <li>
+                    <input type="checkbox"> 
+                    <!-- delete type -->
+                    <label class="default-task task"> Pay Bills </label>
+                    <input type="text" class="task">
+                    <!-- delete type -->
+                    <button class="edit-button edit"> Edit </button>
+                    <button class="delete-button delete">
+                 <img src="./remove.svg" alt="remove-icon"> </button>
                 </li>
-                <li class="editMode"><input type="checkbox">
-                    <label class="task">Go Shopping</label>
-                    <input value="Go Shopping" class="task">
-                    <button class="edit">Save</button>
-                    
-                    <button class="delete">
+                <li class="edit-item edit-mode">
+                    <input type="checkbox">
+                    <!-- delete type -->
+                    <label type="text" class="edit-task task"> Go Shopping </label>
+                    <!-- delete type -->
+                    <input value="go shopping" class="task">
+                    <!-- Go Shopping capitalize -->
+                    <button class="edit-button edit">Save</button>
+
+                    <button class="delete-button delete">
                         <img src="./remove.svg" alt="remove-icon">
                     </button>
                 </li>
             </ul>
-            <h3>completed</h3>
+            <h3> Completed </h3>
             <ul id="completed-tasks">
                 <li>
                     <input type="checkbox" checked>
-                    <label class="task">See the Doctor</label>
+                    <!-- delete type -->
+                    <label class="default-task task"> See the Doctor </label>
                     <input type="text" class="task">
-                    <button class="edit">Edit</button><button class="delete">
+                    <!-- delete type -->
+                    <button class="edit-button edit"> Edit </button>
+                    <button class="delete-button delete">
                         <img src="./remove.svg" alt="remove-icon">
                     </button>
                 </li>
             </ul>
         </div>
     </main>
-        <script src="app.js"></script>
-    </body>
-    </html>
-    
+    <script src="app.js"></script>
+</body>
+
+</html>
