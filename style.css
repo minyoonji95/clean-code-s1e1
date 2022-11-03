@@ -164,7 +164,3 @@ ul li.edit-mode input.task {
     display: inline-block;
     width: 224px;
 }
-
-ul li.edit-mode label {
-    display: none;
-}
